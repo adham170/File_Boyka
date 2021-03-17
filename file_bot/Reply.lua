@@ -2,7 +2,7 @@ local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
 if text == 'هلو' then
-TextReply = 'هلاوات يكلبي نورت/ي'
+TextReply = 'هلاوات يقلبي نورت/ي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -157,7 +157,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'صباحو' then
-TextReply = 'صباح عسل وقشطه يكلبي'
+TextReply = 'صباح عسل وقشطه يقلبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -257,7 +257,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اكو احد' then
-TextReply = 'اي كلبي اني موجود'
+TextReply = 'اي قلبي اني موجود'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -288,6 +288,124 @@ return false
 end
 end
 
+if text == 'هاي' then
+TextReply = 'باي'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'هيي' then
+TextReply = 'بيي'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'سيفي' then
+TextReply = 'شقوطه وه'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'حظر' then
+TextReply = 'غشيم'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'لول' then
+TextReply = 'رش كول'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'السلكان' then
+TextReply = 'سالكه بنسوق الدنيا عن عن'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'كسمك' then
+TextReply = 'فرقعت بزمك'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'تاك' then
+TextReply = 'تاك تاك بيو بيو'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'مبضون' then
+TextReply = 'وانا كمان والله'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'من اي' then
+TextReply = 'من الاكس ي عم بقولها هاي عملتي بلوك 😿'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'ضحك' then
+TextReply = 'تدوم 😿😿'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'بضحك' then
+TextReply = 'تدوم يحب'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+if text == 'يصحك' then
+TextReply = 'يتي'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if text == 'تفعيل ردود البوت' and Manager(msg) then
 database:del(bot_id..'Reply:Status'..msg.chat_id_)
 send(msg.chat_id_, msg.id_,'❃∫ تم تفعيل ردود البوت')
@@ -302,5 +420,5 @@ end
 
 end
 return {
-Poyka = Reply
+black = Reply
 }
